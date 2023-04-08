@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  env: Helloeverone123
+kind: ConfigMap
+metadata:
+  name: config
+  namespace: pod-with-namespace
+

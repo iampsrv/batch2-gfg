@@ -1,0 +1,17 @@
+pod
+rs
+deply
+svc
+ingress
+deploy strategy
+scale
+rollaback and update
+kubectl commands
+
+
+volume
+configmap
+secrets
+hpa
+sa
+nodeport, clusterip

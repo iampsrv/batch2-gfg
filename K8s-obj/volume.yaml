@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myfirstdeployment
+  labels:
+    app: myflaskapp
+spec:
+  template:
+    metadata:
+      name: myfirstpod
+      labels:
+        app: myflaskapp
+    spec:
+      containers:
+        - name: myfirstpod
+          image: psrv3/log-flask:latest
+          ports:
+            - containerPort: 5001
+          volumeMounts:
+            - name: log-volume
+              mountPath: main
+      volumes:
+        - name: log-volume
+          hostPath:
+            path: main
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myflaskapp

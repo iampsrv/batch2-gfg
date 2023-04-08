@@ -1,0 +1,54 @@
+1. minikube start: starts a local Kubernetes cluster using Minikube.
+minikube start --driver=hyperv 
+minikube config set driver hyperv
+minikube version
+
+2. minikube stop: stops the local Kubernetes cluster.
+
+3. minikube delete: deletes the local Kubernetes cluster.
+
+4. minikube dashboard: opens the Kubernetes Dashboard in a web browser.
+
+5. minikube addons list: lists the available addons that can be enabled or disabled.
+minikube addons enable <addon-name>: enables the specified addon.
+minikube addons disable <addon-name>: disables the specified addon.
+
+6. minikube ssh: opens an SSH session to the Minikube VM.
+whoami
+docker run hello-world
+
+7. minikube status: displays the status of the local Kubernetes cluster.
+
+8. minikube ip: displays the IP address of the local Kubernetes cluster.
+
+9. minikube service <service-name>: opens a NodePort service in a web browser.
+
+10. minikube logs: displays the logs of the Minikube VM.
+
+11. minikube update-check: checks for available Minikube updates.
+
+12. minikube update: updates the Minikube version to the latest stable release.
+
+13. minikube pause: Pause Kubernetes
+
+14. minikube unpause:Unpause Kubernetes
+
+15. minikube docker-env: Configure environment to use minikube's Docker daemon
+docker run hello-world
+
+16. minikube cache: Add, delete, or push a local image into minikube
+minikube cache list
+minikube cache add <image-name>
+minikube cache delete <image-name>
+minikube cache reload
+
+17. minikube ssh-key: Retrieve the ssh identity key path of the specified node
+
+18. minikube start --nodes 2 -p multinode-demo --driver=hyperv (To start multinode kubernetes cluster)
+kubectl get nodes
+minikube status -p multinode-demo
+
+19. minikube node: Add, remove, or list additional nodes
+
+20. minikube profile: Get or list the current profiles (clusters)
+minikube profile list

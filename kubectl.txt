@@ -1,0 +1,18 @@
+minikube start --driver=hyperv
+kubectl get pods
+kubectl create -f pod.yaml
+kubectl get pods
+kubectl create -f service.yaml
+kubectl get svc
+lubectl describe svc myfirstpodsvc
+kubectl create -f resplica_set.yaml
+kubectl get rs
+kubectl get pods
+kubectl create -f deployment.yaml
+kubectl get all
+kubectl create -f ingress.yaml
+kubectl get ingress
+kubectl describe ingress myfirstpodingress
+
+minikube addons list
+c:\Windows\System32\Drivers\etc\
